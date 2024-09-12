@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+        .subscribe-button {
+            background-color: rgb(200, 0, 0);
+            color: white;
+            border: none;
+            padding: 10px 16px 10px 16px;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right: 8px;
+            margin-left: 20px;
+            transition: opacity 0.15s;
+            vertical-align: top;
+        }
+
+        .subscribe-button:hover {
+            opacity: 0.6;
+        }
+
+        .subscribe-button:active {
+            opacity: 0.5;
+        }
+
+        .join-button {
+            background-color: white;
+            border-color: rgb(41, 118, 211);
+            border-style: solid;
+            border-width: 1px;
+            color: rgb(41, 118, 211);
+            padding: 9px 16px 9px 16px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: background-color 0.15s, color 0.15s;
+            vertical-align: top;
+        }
+
+        .join-button:hover {
+            background-color: rgb(41, 118, 211);
+            color: white;
+        }
+
+        .join-button:active {
+            opacity: 0.7;
+        }
+
+        .tweet-button {
+            background-color: rgb(2, 158, 255);
+            color: white;
+            border: none;
+            padding: 9px 16px 9px 16px;
+            border-radius: 18px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            margin-left: 8px;
+            transition: box-shadow 0.15s;
+            vertical-align: top;
+        }
+
+        .tweet-button:hover {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .uber-button {
+            background-color: black;
+            color: white;
+            border: none;
+            height: 36px;
+            width: 120px;
+            cursor: pointer;
+            margin-left: 8px;
+            transition: opacity 0.15s;
+        }
+
+        .uber-button:hover {
+            opacity: 0.7;
+        }
+
+        .amazon-button {
+            background-color: rgb(255, 216, 20);
+            color: black;
+            border: none;
+            border-radius: 30px;
+            height: 36px;
+            width: 190px;
+            font-size: 15px;
+            margin-left: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.15s, opacity 0.15s;
+        }
+
+        .amazon-button:hover {
+            background-color: rgb(230, 194, 18);
+        }
+
+        .amazon-button:active {
+            opacity: 0.5;
+        }
+
+        .github-button {
+            background-color: rgb(46, 164, 79);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            height: 36px;
+            width: 75px;
+            margin-left: 8px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: box-shadow 0.15s;
+        }
+
+        .github-button:hover {
+            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .bootstrap-button {
+            background-color: rgb(121, 82, 179);
+            color: white;
+            border: none;
+            width: 110px;
+            height: 36px;
+            margin-left: 8px;
+            border-radius: 2px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.15s;
+        }
+
+        .bootstrap-button:hover {
+            background-color: rgb(101, 68, 151);
+        }
+
+        .download-button {
+            background-color: white;
+            color: rgb(106, 117, 125);
+            border: 1px solid rgb(106, 117, 125);
+            height: 36px;
+            width: 110px;
+            margin-left: 8px;
+            border-radius: 2px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.15s, color 0.15s;
+        }
+
+        .download-button:hover {
+            background-color: rgb(106, 117, 125);
+            color: white;
+        }
+
+        .linkedin-button {
+            background-color: rgb(10, 102, 194);
+            color: white;
+            border: none;
+            border-radius: 28px;
+            height: 36px;
+            width: 236px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 8px;
+            font-size: 15px;
+            transition: background-color 0.15s;
+        }
+
+        .linkedin-button:hover {
+            background-color: rgb(9, 84, 160);
+        }
+
+        .save-button {
+            background-color: white;
+            border-radius: 28px;
+            border: 1px solid rgb(10, 102, 194);
+            color: rgb(10, 102, 194);
+            font-weight: bold;
+            font-size: 15px;
+            height: 36px;
+            width: 80px;
+            cursor: pointer;
+            margin-left: 8px;
+            transition: background-color 0.15s, border-width 0.15s;
+        }
+
+        .save-button:hover {
+            background-color: rgb(238, 242, 247);
+            border-width: 2px;
+        }
+
+        .buy-button {
+            background-color: rgb(255, 164, 28);
+            color: black;
+            border: none;
+            border-radius: 30px;
+            height: 36px;
+            width: 190px;
+            font-size: 15px;
+            margin-left: 8px;
+            cursor: pointer;
+            font-weight: bold; 
+            transition: background-color 0.15s, opacity 0.15s;          
+        }
+
+        .buy-button:hover {
+            background-color: rgb(219, 140, 22);
+        }
+
+        .buy-button:active {
+            opacity: 0.5;
+        }
+
+        a {
+            color: rgb(0, 113, 133);
+            font-weight: bold;
+            transition: color 0.15s;
+        }
+
+        a:hover {
+            color: rgb(189, 126, 11);
+        }
+
+        h2 {
+            color: rgb(0, 118, 0);
+            font-weight: bold;
+        }
+
+        .back-button, .next-button {
+            font-size: 18px;
+            padding: 10px 7px 10px 7px;
+            display: inline-block;
+            margin: auto 10px;
+        }
+
+        ul {
+            display: inline-block;
+            padding: 5px 5px;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+            padding: 3px;
+        }
+
+        .stretch-button {
+            background-color: darkgreen;
+            color: white;
+            font-size: 18px;
+            padding: 7px 7px;
+            border: none;
+            margin: 20px auto;
+            transition: padding 0.75s;
+        }
+
+        .stretch-button:hover {
+            padding: 30px 40px;
+        }
+
+        .one-button, .two-button, .three-button {
+            background-color: darkgreen;
+            color: white;
+            font-size: 18px;
+            padding: 8px 10px;
+            margin: 20px 16px;
+            transition: padding 0.75s, margin 0.75s;
+        }
+
+        .one-button:hover, .two-button:hover, .three-button:hover {
+            padding: 8px 20px;
+            margin: 20px 6px;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="subscribe-button">SUBSCRIBE</button>
+    <button class="join-button">JOIN</button>
+    <button class="tweet-button">Tweet</button>
+    <button class="uber-button">Request Now</button>
+    <button class="amazon-button">Add to Cart</button>
+    <button class="github-button">Sign up</button>
+    <button class="bootstrap-button">Get Started</button>
+    <button class="download-button">Download</button>
+    <button class="linkedin-button">Apply on company website</button>
+    <button class="save-button">Save</button>
+    <br>
+    <br>
+
+    <a href="amazon.com">Back to Amazon</a>
+    <h1>Nike Black Running Shoes</h1>
+    <h2>$39 - in stock.</h2>
+    <p>Free Delivery Tomorrow</p>
+    <button class="amazon-button">Add to Cart</button>
+    <button class="buy-button">Buy Now</button>
+
+    <br>
+    <br>
+
+    <button class="back-button">Back</button>
+    <ul>
+        <li><a href="#" class="page-links">1</a></li>
+        <li><a href="#" class="page-links">2</a></li>
+        <li><a href="#" class="page-links">3</a></li>
+        <li><a href="#" class="page-links">4</a></li>
+        <li><a href="#" class="page-links">5</a></li>
+    </ul>
+    <button class="next-button">Next</button>
+
+    <br>
+
+    <button class="stretch-button">Stretch</button>
+
+    <br>
+
+    <button class="shadow-button">Shadow</button>
+
+    <br>
+
+    <button class="one-button">One</button>
+    <button class="two-button">Two</button>
+    <button class="three-button">Three</button>
+    
+</body>
+</html>
