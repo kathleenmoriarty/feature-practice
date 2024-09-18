@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <style>
+
+    .instagram {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        column-gap: 20px;
+    }
+
+    .instagram .user {
+        font-family: Roboto, Arial;
+        border: none;
+        box-shadow: 2px 2px 15px rgba(121, 120, 120, 0.5);
+      }
+
+      .instagram .user-picture {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .mutual-friends {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        column-gap: 10px;
+        align-items: center;
+        margin-top: 0;
+      }
+
+      .mutual-friends img {
+        width: 100%;
+        border-radius: 50%;
+      }
+
+      .mutual-friends p {
+        font-size: 12px;
+      }
+
+      .instagram .user button {
+        color: white;
+        background-color: rgb(78, 78, 252);
+        border: none;
+        border-radius: 3px;
+        padding: 8px 16px;
+        margin-top: 3px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+
+      .instagram .user-info {
+        margin: 5px 10px;
+      }
+
+      .instagram .user-info .name  {
+        font-weight: bold;
+        margin: 0;
+      }
+
+    </style>
+</head>
+<body style="padding-bottom: 1000px;">
+    
+    <div style="
+
+        display: grid;
+        grid-template-columns: 100px 100px;
+    ">
+        <div style="background-color: lightblue;">div 1</div>
+        <div style="background-color: lightpink;">div 2<p>Text</p></div>
+
+    </div>
+    <div style="
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: 100px 100px 200px;
+    ">
+        <div style="background-color: lightblue;">100px</div>
+        <div style="background-color: lightpink;">200px</div>
+        <div style="background-color: lightblue;">300px</div>
+        <div style="background-color: lightblue;">100px</div>
+    </div>
+    <div style="
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: 100px 1fr;
+    ">
+        <div style="background-color: lightblue;">100px</div>
+        <div style="background-color: lightpink;">1fr</div>
+    </div>
+    <div style="
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: 100px 1fr 1fr;
+    ">
+        <div style="background-color: lightblue;">100px</div>
+        <div style="background-color: lightpink;">1fr</div>
+        <div style="background-color: lightblue;">1fr</div>
+    </div>
+    <div style="
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+    ">
+        <div style="background-color: lightblue; height: 200px;">1fr</div>
+        <div style="background-color: lightpink; height: 200px;">1fr</div>
+        <div style="background-color: lightblue; height: 200px;">1fr</div>
+        <div style="background-color: lightpink; height: 200px;">1fr</div>
+        <div style="background-color: lightblue; height: 200px;">1fr</div>
+        <div style="background-color: lightpink; height: 200px;">1fr</div>
+    </div>
+    <div style="
+        display: grid;
+        grid-template-columns: 200px 75px;
+        margin-top: 30px;
+    ">
+        <div style="background-color: lightblue;">200px</div>
+        <div style="background-color: lightpink;">75px</div>
+    </div>
+    <div style="
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: 50px 1fr 75px;
+    ">
+        <div style="background-color: lightblue;">50px</div>
+        <div style="background-color: lightpink;">1fr</div>
+        <div style="background-color: lightblue;">75px</div>
+    </div>
+    <div style="
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+    ">
+        <div style="background-color: lightpink;">col1</div>
+        <div style="background-color: lightpink;">col2</div>
+        <div style="background-color: lightpink;">col3</div>
+        <div style="background-color: lightpink;">col4</div>
+        <div style="background-color: lightpink;">col1</div>
+        <div style="background-color: lightpink;">col2</div>
+        <div style="background-color: lightpink;">col3</div>
+        <div style="background-color: lightpink;">col4</div>
+    </div>
+    
+    <br>
+    <br>
+
+    <div class="instagram">
+        <div class="user">
+            <img src="youtube-page/thumbnails/thumbnail-1.webp" class="user-picture">
+            <div class="user-info">
+                <p class="name">Oliver</p>
+                <div class="mutual-friends">
+                    <img src="youtube-page/channel-pictures/channel-1.jpeg">
+                    <p>2 mutual friends</p>
+                </div>
+            </div>
+            <button>Add Friend</button>
+        </div>
+        <div class="user">
+            <img src="youtube-page/thumbnails/thumbnail-2.webp" class="user-picture">
+            <div class="user-info">
+                <p class="name">Mimi</p>
+                <div class="mutual-friends">
+                    <img src="youtube-page/channel-pictures/channel-2.jpeg">
+                    <p>3 mutual friends</p>
+                </div>
+            </div>
+            <button>Add Friend</button>
+        </div>
+        <div class="user">
+            <img src="youtube-page/thumbnails/thumbnail-3.webp" class="user-picture">
+            <div class="user-info">
+                <p class="name">Rex</p>
+                <div class="mutual-friends">
+                    <img src="youtube-page/channel-pictures/channel-3.jpeg">
+                    <p>4 mutual friends</p>
+                </div>
+            </div>
+            <button>Add Friend</button>
+        </div>
+
+    </div>
+</body>
+</html>

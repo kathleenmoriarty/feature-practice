@@ -18,8 +18,7 @@
       }
 
       .thumbnail {
-        width: 300px;
-        display: block;
+        width: 100%;
       }
 
       .search-bar {
@@ -34,22 +33,9 @@
         margin-bottom: 12px;
       }
 
-      .video-preview {
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 15px;
-      }
-
-      .channel-picture {
-        display: inline-block;
-        width: 50px;
-        vertical-align: top;
-      }
-
-      .video-info {
-        display: inline-block;
-        width: 200px;
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
       }
 
       .profile-picture {
@@ -71,109 +57,114 @@
         margin-bottom: 4px;
       }
 
-      .instagram .user {
-        display: inline-block;
-        font-family: Roboto, Arial;
-        margin: auto 8px;
-        border: 1px solid rgb(192, 190, 190);
-        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+      .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
       }
-
-      .instagram .user-picture {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-      }
-
-      .mutual-friends img {
-        border-radius: 50%;
-        width: 30px;
-        display: inline-block;
-      }
-
-      .mutual-friends p {
-        font-size: 12px;
-        display: inline-block;
-      }
-
       
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="Search">
 
-    <div class="video-preview">
+    <div class="video-grid">
+      <div class="video-preview">
+          <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+          </div>
+          <div class="video-info-grid">
+              <div class="channel-picture">
+                  <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+              </div>
+              <div class="video-info">
+                  <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                  <p class="video-author">Marques Brownlee </p>
+                  <p class="video-stats">3.4M views &#183; 6 months ago</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="video-preview">
+          <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+          </div>
+          <div class="video-info-grid">
+              <div class="channel-picture">
+                  <img class="profile-picture" src="channel-pictures/channel-2.jpeg">
+              </div>
+              <div class="video-info">
+                  <p class="video-title">Try Not To Laugh Challenge #9</p>
+                  <p class="video-author">Markiplier</p>
+                  <p class="video-stats">19M views &#183; 4 years ago</p>
+              </div>
+          </div>
+      </div>
+      <div class="video-preview">
         <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+            <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
         </div>
-        <div>
+        <div class="video-info-grid">
             <div class="channel-picture">
-                <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+                <img class="profile-picture" src="channel-pictures/channel-3.jpeg">
             </div>
             <div class="video-info">
-                <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-                <p class="video-author">Marques Brownlee </p>
-                <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                <p class="video-title">Crazy Tik Toks Taken Moments Before DISASTER</p>
+                <p class="video-author">SSSniperWolf</p>
+                <p class="video-stats">12M views &#183; 1 year ago</p>
             </div>
         </div>
     </div>
 
     <div class="video-preview">
         <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+            <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
         </div>
-        <div>
+        <div class="video-info-grid">
             <div class="channel-picture">
-                <img class="profile-picture" src="channel-pictures/channel-2.jpeg">
+                <img class="profile-picture" src="channel-pictures/channel-4.jpeg">
             </div>
             <div class="video-info">
-                <p class="video-title">Try Not To Laugh Challenge #9</p>
-                <p class="video-author">Markiplier</p>
-                <p class="video-stats">19M views &#183; 4 years ago</p>
+                <p class="video-title">The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
+                <p class="video-author">Veriatasium</p>
+                <p class="video-stats">18M views &#183; 4 months ago</p>
             </div>
         </div>
     </div>
 
-    <br>
-    <br>
+    <div class="video-preview">
+      <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+      </div>
+      <div class="video-info-grid">
+          <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/channel-5.jpeg">
+          </div>
+          <div class="video-info">
+              <p class="video-title">Kadane's Algorithm to Maximum Sum Subarray Problem</p>
+              <p class="video-author">CS Dojo</p>
+              <p class="video-stats">519K views &#183; 5 years ago</p>
+          </div>
+      </div>
+  </div>
 
-    <div class="instagram">
-        <div class="user">
-            <img src="thumbnails/thumbnail-1.webp" class="user-picture">
-            <div class="user-info">
-                <p>Oliver</p>
-                <div class="mutual-friends">
-                    <img src="channel-pictures/channel-1.jpeg">
-                    <p>2 mutual friends</p>
-                </div>
-            </div>
-            <button>Add Friend</button>
-        </div>
-        <div class="user">
-            <img src="thumbnails/thumbnail-2.webp" class="user-picture">
-            <div class="user-info">
-                <p>Oliver</p>
-                <div class="mutual-friends">
-                    <img src="channel-pictures/channel-2.jpeg">
-                    <p>2 mutual friends</p>
-                </div>
-            </div>
-            <button>Add Friend</button>
-        </div>
-        <div class="user">
-            <img src="thumbnails/thumbnail-1.webp" class="user-picture">
-            <div class="user-info">
-                <p>Oliver</p>
-                <div class="mutual-friends">
-                    <img src="channel-pictures/channel-1.jpeg">
-                    <p>2 mutual friends</p>
-                </div>
-            </div>
-            <button>Add Friend</button>
-        </div>
-
-    </div>
-
+  <div class="video-preview">
+      <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+      </div>
+      <div class="video-info-grid">
+          <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/channel-6.jpeg">
+          </div>
+          <div class="video-info">
+              <p class="video-title">Anything You Can Fit In The Circle I'll Pay for</p>
+              <p class="video-author">MrBeast</p>
+              <p class="video-stats">141M views &#183; 1 year ago</p>
+          </div>
+      </div>
+  </div>
+</div>
 </body>
 </html>
 
@@ -267,6 +258,53 @@
             font-weight: bold;
             cursor: pointer;
         }
+
+        .instagram .user {
+        display: inline-block;
+        font-family: Roboto, Arial;
+        margin: auto 8px;
+        border: none;
+        box-shadow: 2px 2px 15px rgba(121, 120, 120, 0.5);
+      }
+
+      .instagram .user-picture {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .mutual-friends img {
+        border-radius: 50%;
+        width: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 5px;
+      }
+
+      .mutual-friends p {
+        font-size: 12px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .instagram .user button {
+        color: white;
+        background-color: rgb(78, 78, 252);
+        border: none;
+        border-radius: 3px;
+        padding: 8px 16px;
+        margin-top: 3px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+
+      .instagram .user-info {
+        margin: 5px 10px;
+      }
+
+      .instagram .user-info .name  {
+        font-weight: bold;
+      }
             <br>
 
     <p>Email</p>
@@ -321,5 +359,45 @@
                 <button>Follow</button>
             </div>
         </div>
+    </div>
+    
+    <br>
+    <br>
+
+    <div class="instagram">
+        <div class="user">
+            <img src="thumbnails/thumbnail-1.webp" class="user-picture">
+            <div class="user-info">
+                <p class="name">Oliver</p>
+                <div class="mutual-friends">
+                    <img src="channel-pictures/channel-1.jpeg">
+                    <p>2 mutual friends</p>
+                </div>
+            </div>
+            <button>Add Friend</button>
+        </div>
+        <div class="user">
+            <img src="thumbnails/thumbnail-2.webp" class="user-picture">
+            <div class="user-info">
+                <p class="name">Mimi</p>
+                <div class="mutual-friends">
+                    <img src="channel-pictures/channel-2.jpeg">
+                    <p>3 mutual friends</p>
+                </div>
+            </div>
+            <button>Add Friend</button>
+        </div>
+        <div class="user">
+            <img src="thumbnails/thumbnail-1.webp" class="user-picture">
+            <div class="user-info">
+                <p class="name">Rex</p>
+                <div class="mutual-friends">
+                    <img src="channel-pictures/channel-1.jpeg">
+                    <p>4 mutual friends</p>
+                </div>
+            </div>
+            <button>Add Friend</button>
+        </div>
+
     </div>
 -->
