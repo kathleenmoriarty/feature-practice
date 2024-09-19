@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Practice</title>
+</head>
+<body style="
+height: 3000px;
+padding-top: 60px;
+padding-left: 80px;
+">
+    <div style="
+        background-color: black; 
+        color: white; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        z-index: 1;
+    ">header
+        <div style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        color: black;
+        padding: 3px 6px;
+        border-radius: 20px;
+        "
+        >X</div>    
+    </div>
+
+
+
+    <div style="
+    background-color: green; 
+    color: white; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 50px;
+    width: 72px;
+    ">
+
+        sidebar-left
+        <div style="
+        position: absolute;
+        background-color: red;
+        color: white;
+        right: 0px;
+        top: 0px;
+        ">
+            X
+        </div>
+    </div>
+
+    <div style="
+    background-color: green;
+    color: white;
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    width:  100px;
+    ">
+        sidebar-right
+    </div>
+
+    <div style="
+    position: absolute;
+    background-color: red;
+    color: white;
+    right: 80px;
+    top: 60px;
+    ">
+        absolute
+    </div>
+
+    <div style="
+        background-color: lightblue;
+        height: 200px;
+        width: 200px;
+        position: static;
+    ">div 1</div>
+
+    <div style="
+        background-color: lightpink; 
+        height: 200px; 
+        width: 200px;
+        position: relative;
+    ">div 2
+        <div style="
+        position: absolute;
+        background-color: black;
+        color: white;
+        right: 10px;
+        bottom: 10px;
+        ">
+            5:00
+        </div></div>
+
+    <div style="
+    background-color: rgb(99, 95, 95);
+    color: white;
+    font-size: 18px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 320px;
+    height: 180px;
+    ">
+        <div style="
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        background-color: black;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 20px;
+        "
+        >X</div> 
+        <div style="
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        background-color: black;
+        color: white;
+        padding: 3px 5px;
+        font-size: 15px;
+        border-radius: 2px;
+        ">0:29</div>  
+    </div>
+
+    <div style="
+    position: relative;
+    width: 300px;
+    height: 355px;
+    display: inline-block;
+    ">
+        <img src="istockphoto-1302815072-1024x1024.jpg" style="width: 100%;">
+        <div style="
+        position: absolute;
+        right: 0;
+        top: 15px;
+        background-color: black;
+        color: white;
+        padding: 8px 10px;
+        ">
+            20% OFF
+        </div>
+
+        <div style="
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        background-color: rgba(212, 208, 208, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ">
+            <button style="padding: 8px 14px; font-size: 15px; border-radius: 3px; border: 2px solid black;">Add to cart</button>
+        </div>
+    </div>
+
+    <!--<div style="
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    ">
+        <div style="background-color: white; width: 500px; height: 150px; border-radius: 10px;">
+            <h1 style="margin-left: 20px;">Modal Title</h1>
+            <p style="margin-left: 20px;">This is a modal</p>
+            <button style="margin-left: 20px;">Close</button>
+        </div>
+    </div>-->
+
+    <br>
+    <br>
+
+    <!--<div style="
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    ">
+        <div style="width: 150px; display: flex; flex-direction: row; justify-content: center; align-items: center; margin-left: 20px;">
+            <img src="youtube-page/channel-pictures/channel-1.jpeg" style="width: 30%; border-radius: 40px;">
+            <p style="font-weight: bold; font-size: 18px; flex: 1; margin-left: 10px;">Oliver Cat</p>
+        </div>
+
+        <div style="margin-right: 15px;">
+            <button style="background-color: blue; color: white; border: none; border-radius: 5px; padding: 8px 12px; font-weight: 600;">Add Friend</button>
+            <button style="background-color: rgb(219, 236, 241); color: black; border: none; border-radius: 5px; padding: 8px 12px; font-weight: 600; margin-left: 5px;">Message</button>
+        </div>
+    </div>-->
+
+    <!--<div style="
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    ">
+        <div style="
+        width: 60px;
+        background-color: black;
+        ">
+            <img src="youtube-page/channel-pictures/channel-1.jpeg" style="border-radius: 50px; width: 70%; margin-top: 10px; margin-left: 9px;">
+            <img src="youtube-page/channel-pictures/channel-2.jpeg" style="border-radius: 50px; width: 70%; margin-top: 3px; margin-left: 9px;">
+            <img src="youtube-page/channel-pictures/channel-3.jpeg" style="border-radius: 50px; width: 70%; margin-top: 3px; margin-left: 9px;">
+        </div>
+
+        <div style="
+        flex: 1;
+        background-color: rgb(70, 68, 68);
+        ">
+            <div style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            ">
+                <p style="color: white; font-weight: bold; font-size: 12px; margin: 0;">INFO</p>
+                <p style="color: gray; margin: 0;">&#43;</p>
+            </div>
+            <div style="
+            color: gray;
+            font-size: 14px;
+            margin-left: 10px;
+            ">
+                <p># new-videos</p>
+                <p># updates</p>
+                <p># faq</p>
+            </div>
+        </div>
+    </div>-->
+
+</body>
+</html>
