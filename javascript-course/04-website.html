@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics Review HTML CSS Javascript</title>
+    <style>
+        .red-button {
+            background-color: red;
+            color: white;
+            border: none;
+        }
+
+        .yellow-button {
+            background-color: yellow;
+        }
+
+        .add-to-cart .yellow,
+        .add-to-cart .orange {
+            border: 2px solid black;
+            color: black;
+        }
+        .add-to-cart .yellow {
+
+            background-color: yellow;
+        }
+
+        .add-to-cart .orange {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    
+    <button title="tooltip" class="red-button" onclick="alert('Good job!');">
+        Hello
+    </button>
+
+    <p>
+        paragraph of <button class="yellow-button">hello</button>text
+    </p>
+
+    <div class="add-to-cart">
+        <p>Adults Plain Cotton T-shirt</p>
+        <p>Price: $7.99</p>
+
+        <button class="yellow" onclick="alert('Added')">Add to cart</button> <button class="orange" onclick="console.log('Loading'); alert('Purchased')">Buy now</button>
+
+    </div>
+
+    <script>
+        // This is a comment.
+        // alert('hello');
+    </script>
+</body>
+</html>

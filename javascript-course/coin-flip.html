@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip</title>
+</head>
+<body>
+    
+    <button onclick="
+        playGame('heads');   
+    ">heads</button>
+
+    <button onclick="
+        playGame('tails');   
+    ">tails</button>
+
+    <script>
+        const score = JSON.parse(localStorage.getItem('score')) || {
+            wins: 0,
+            losses: 0
+        };
+
+        function playGame(guess) {
+            const randomnumber = Math.random();
+
+            let result = randomnumber < 0.5 ? 'heads' : 'tails';
+
+            if (result === guess) {
+                score.wins++;
+                console.log(`You win! Wins: ${score.wins}, Losses: ${score.losses}`);
+            } else {
+                score.losses++;
+                console.log(`You lose! Wins: ${score.wins}, Losses: ${score.losses}`);
+            }
+
+           localStorage.setItem('score', JSON.stringify(score));
+            
+        }
+        
+    </script>
+</body>
+</html>
