@@ -656,5 +656,19 @@ const products = [
         "apparel",
         "mens"
       ]
+    },
+    {
+      id: "h3456634-9999-2340=js9vjf",
+      image: "images/products/men-cozy-fleece-zip-up-hoodie-red.jpg",
+      name: "Backpack",
+      rating: {
+        stars: 4,
+        count: 188
+      },
+      priceCents: 3199,
+      keywords: [
+        "backpack",
+        "school-bag"
+      ]
     }
   ];

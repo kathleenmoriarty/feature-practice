@@ -111,6 +111,7 @@
     align-items: center;
     margin-bottom: 8px;
     opacity: 0;
+    transition: opacity 0.15s;
 }
 
 .added-to-cart img {
@@ -122,4 +123,8 @@
     width: 100%;
     padding: 8px;
     border-radius: 50px;
+}
+
+.product-added-visible {
+    opacity: 1;
 }
