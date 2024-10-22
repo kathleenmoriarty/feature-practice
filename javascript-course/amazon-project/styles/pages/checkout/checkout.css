@@ -94,6 +94,22 @@ main {
     margin-left: 3px;
 }
 
+.quantity-input {
+    width: 30px;
+}
+
+.quantity-input,
+.save-quantity-link,
+.is-editing-quantity .quantity-label,
+.is-editing-quantity .update-quantity-link {
+    display: none;
+}
+
+.is-editing-quantity .quantity-input,
+.is-editing-quantity .save-quantity-link {
+    display: initial;
+}
+
 @media (max-width: 1000px) {
     .delivery-options {
         grid-column: 1 / span 2;
